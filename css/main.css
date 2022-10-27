@@ -976,6 +976,28 @@ body {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
+.carousel__item {
+  display: none;
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border: 2px solid hsl(12, 88%, 69%);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: hsl(12, 88%, 69%);
+}
+
 .hover\:bg-brightRedLight:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 69% / var(--tw-bg-opacity));
